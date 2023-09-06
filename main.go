@@ -27,11 +27,7 @@ func main() {
 	// Works
 	findUsers(ctx, client)
 
-	// Fails with
-	// could not send raw query:
-	// 		json data result unmarshal:
-	// 			json:
-	// 				cannot unmarshal object into Go struct field RawUserModel.items of type raw.String
+	// Works with the latest prisma-client-go
 	findUsersRaw(ctx, client)
 }
 
